@@ -1,0 +1,70 @@
+.logo{
+    width: 250px;
+    height :70px;
+    margin-left : 10px;
+    align-items: top;
+}
+.header {
+    margin: right; /* header의 양쪽 여백(margin)을 동등하게 맞춤 -> 수평가운데정렬 */
+    width: 1080px;
+    height: 115px;
+    display: flex;
+    align-items: top; /* 하위 요소들 수직 가운데정렬 */
+    position: relative;
+  }
+ .ball_village{
+    display: inline-block;
+    font-size: large;
+    left : 10px;
+    width: 120px;
+    height : 85px;
+    background-image: url('../../public/imgs/bvlogo.jpeg');
+    background-repeat: no-repeat;
+}
+.add{
+    display : inline-block;
+    position : relative;
+    left : 650px;
+    top: 20px;
+}
+/* button{
+    flex: 4; 
+    height: 46px;
+    margin: 10px;
+    min-width: 115px;
+    padding: 2;
+    border-color: #fe9502;
+    outline: none;
+    background: #f6a22e;
+    color: #ffffff;
+    transition: transform 80ms ease-in;
+    border-radius: 5px;
+    
+    } */
+button:hover{
+    background-color: #f7bf6f;
+}    
+.auth{
+    display : inline-block;
+    position : relative;
+    left : 450px;
+    top: 20px;
+}
+.payment{
+    display : inline-block;
+    position : relative;
+    left : 850px;
+    top: 20px;
+    width : 200px;
+    height : 100px;
+}
+img{
+    display : inline-block
+}
+div{
+    margin-right: 50px;
+}
+span{
+    padding : 10px;
+}
+

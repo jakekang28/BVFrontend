@@ -1,0 +1,14 @@
+table {
+    border-top: solid 1.5px black;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+  }
+thead {
+    text-align: left;
+    font-weight: bold;
+}
+tbody {
+    font-size: 12px;
+  }
+
