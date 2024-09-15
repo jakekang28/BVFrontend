@@ -11,21 +11,22 @@ import AddEquip from "./Components/AddEquip"
 import DummyCheckout from "./Components/DummyCheckout";
 import Login from "./Components/Login"
 import Register from "./Components/Register"
-
+import Home from './Components/Home'
 
 const queryClient = new QueryClient()
 function App() {
-  const {isLoading, data} =  useQuery('equipment-data',() =>{
-    return axios.get(`http://${process.env.REACT_APP_PUBLIC_IP}:${process.env.REACT_APP_SERVER_PORT}/api/equiplist`)
-  })
-  if(isLoading){
-    return <h2>Loading...</h2>
-  }
+  // const {isLoading, data} =  useQuery('equipment-data',() =>{
+  //   return axios.get(`http://${process.env.REACT_APP_PUBLIC_IP}:${process.env.REACT_APP_SERVER_PORT}/api/equiplist`)
+  // })
+  // if(isLoading){
+  //   return <h2>Loading...</h2>
+  // }
   return (
   <QueryClientProvider client = {queryClient}>
     <BrowserRouter>
       <div className="App">
         <Routes>
+          <Route exact path ='/' element={<Home/>}></Route> 
           <Route element = {<Header/>}>
             <Route exact path = "/equipment" element={<Equiplist />}/>
             <Route exact path = "/equipment/:sports" element={<Equiplist />}/>

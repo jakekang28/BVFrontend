@@ -73,7 +73,7 @@ const Login = () => {
                 const data = await res.json();
                 alert(data);
                 if (res.status === 200) {
-                    navigate('/');
+                    navigate('/equipment');
                 } else {
                     setId('');
                     setPw('');
