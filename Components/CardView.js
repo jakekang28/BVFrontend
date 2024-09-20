@@ -116,7 +116,7 @@ function CardView(){
       <>
         <Container>
             <ImgCalContainer>
-              <ProductImg src={`/uploads/${show[0].imgsrc}`}></ProductImg>
+              <ProductImg src={`http://${process.env.REACT_APP_PUBLIC_IP}:${process.env.REACT_APP_SERVER_PORT}/${show[0].imgsrc}`}></ProductImg>
               <CalContainer>
                 <Calendar onChange = {setCalRange} 
                           prev2Label={null}

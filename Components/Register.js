@@ -58,7 +58,7 @@ const Register = () => {
             return;
         } else {
             try {
-                const res = await fetch(`http://${process.env.REACT_APP_PUBLIC_IP}:${process.env.REACT_APP_SERVER_PORT}/api/users/register`, {
+            const res = await fetch(`http://${process.env.REACT_APP_PUBLIC_IP}:${process.env.REACT_APP_SERVER_PORT}/api/users/register`, {
                     method: 'POST',
                     body: JSON.stringify({userId: id, userPw: pw, lend : islend}),
                     credentials: 'include',
@@ -68,7 +68,7 @@ const Register = () => {
                 console.log(data)
                 alert(data);
                 if (res.status === 200) {
-                    navigate('/users/login');
+                    navigate('/');
                 } else {
                     setId('');
                     setPw('');

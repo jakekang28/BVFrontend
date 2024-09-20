@@ -55,7 +55,7 @@ function Equiplist(){
                         return (
                             <NavLink to = {`/detail/${equip.idx}`}>
                                 <Container>
-                                    <Thumbnail src = {`/uploads/${equip.imgsrc}`}/>
+                                    <Thumbnail src = {`http://${process.env.REACT_APP_PUBLIC_IP}:${process.env.REACT_APP_SERVER_PORT}/${equip.imgsrc}`}/>
                                     <Name>{equip.name}</Name>
                                     <Price>제시 가격 :  {equip.price} 원</Price>
                                 </Container>
@@ -66,7 +66,7 @@ function Equiplist(){
                             return ((equip.type_sports === sports) && 
                         <NavLink to = {`/detail/${equip.idx}`}>
                             <Container>
-                                <Thumbnail src = {`/uploads/${equip.imgsrc}`}/>
+                                <Thumbnail src = {`http://${process.env.REACT_APP_PUBLIC_IP}:${process.env.REACT_APP_SERVER_PORT}/${equip.imgsrc}`}/>
                                 <Name>{equip.name}</Name>
                                 <Price>제시 가격 :  {equip.price} 원</Price>
                             </Container>

@@ -9,7 +9,6 @@ import Nav from "./Components/Nav";
 import CardView from "./Components/CardView"
 import AddEquip from "./Components/AddEquip"
 import DummyCheckout from "./Components/DummyCheckout";
-import Login from "./Components/Login"
 import Register from "./Components/Register"
 import Home from './Components/Home'
 
@@ -41,7 +40,6 @@ function App() {
           <Route exact path ="/detail/:id" element={<CardView/>}/>
           <Route exact path = "/add" element = {<AddEquip/>}/>
           <Route exact path ="/payment" element ={<DummyCheckout/>}/>
-          <Route exact path ='/users/login' element = {<Login />}/>
           <Route exact path = '/users/register' element = {<Register/>}/>
           <Route exact path = '/cart' element = {<DummyCheckout/>}/>
         </Routes>
